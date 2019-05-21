@@ -1,5 +1,4 @@
 const faker = require('faker');
-
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
   return Promise.all([
@@ -25,7 +24,7 @@ exports.seed = function(knex, Promise) {
             year: faker.random.number({ min: 2000, max: 2019 }),
           },
           {
-            title: faker.lorem.word(),
+            title: faker.lorem.words(),
             description: faker.lorem.words(),
             year: faker.random.number({ min: 2000, max: 2019 }),
           },
